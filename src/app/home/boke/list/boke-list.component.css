@@ -1,0 +1,54 @@
+.textbox{
+    width: 575px;
+    height: 500px;
+}
+
+.textbox-show{
+        width: 600px;
+        height: 535px;
+    }
+
+
+    #topTags {
+        width: 1300px;
+        height: 50px;
+        margin: 0 auto;
+        float: left;
+        font-size: 18px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .panel {
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        -moz-border-radius: 25px;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top:3%;
+        transition: all 0.3s ease;
+      }
+      
+      .panel:hover,
+      .panel:focus {
+      }
+
+      .boketitle{
+        text-align:center;
+        color:#50a3a2;
+        font-size:30px;
+        margin-top: 1%;
+      }
+      .bokeboddy{
+        margin:15px;
+        color:#44807F;
+        font-size:15px;
+        max-height: 40px;
+        overflow: hidden;
+      }
+      .boketime{
+        color:lightblue;
+        font-size:20px;
+        margin: 15px;
+      }

@@ -1,0 +1,36 @@
+<div id="topTags">笔记</div>
+
+<div>
+    <input type="text" [(ngModel)]="title">
+</div>
+
+<div class="container-fluid">
+    <div class="row" style="margin-top:5%;">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Markdown</h3>
+                </div>
+                <div class="panel-body">
+                    <textarea name="name" id="textbox" class="textbox" style="font-size:20px;" [(ngModel)]="textData"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">预览</h3>
+                </div>
+                <div class="panel-body" class="textbox-show" style="overflow-y: scroll;">
+                    <markdown [data]='textData' style="font-size:20px;"></markdown>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="text-align:center;" *ngIf="type=='add'">
+<button class="button button-pill button-green" (click)="AddBoke();">添加</button>
+</div>
+<div style="text-align:center;"  *ngIf="type=='edit'">
+<button class="button button-pill button-green" (click)="SaveBoke();">保存</button>
+</div>

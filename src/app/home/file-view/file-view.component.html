@@ -1,0 +1,23 @@
+<div id="topTags">目录:{{curDir}}</div>
+
+
+<div class="file-content">
+    <div>
+        <a class="btn-blue" (click)="getLastDirs()">返回</a>
+        <input type="file" style="display:inline-block;" name="upload" (change)="uploadFile($event)" />
+    </div>
+    <div *ngFor="let dirname of fileData.DirName;let i = index">
+        <div>
+            <img src="../../assets/icon/dir.svg" width="50px" class="file-img">
+            <a class="file-name" style="display:inline-block;" (click)="getFilesDirs(fileData.Dir[i]);">{{dirname}}</a>
+        </div>
+    </div>
+    <div *ngFor="let filename of fileData.FileName;let i = index">
+        <div>
+            <img src="../../assets/icon/file.svg" width="50px" class="file-img">
+            <a class="file-name" style="display:inline-block;">{{filename}}</a>
+            <a class="btn-blue" (click)="download(fileData.File[i]);">下载</a>
+            <a class="btn-blue">删除</a>
+        </div>
+    </div>
+</div>

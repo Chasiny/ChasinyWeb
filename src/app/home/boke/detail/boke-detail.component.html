@@ -1,0 +1,13 @@
+<h2 style="margin-top:20px;text-align:center;color:white;font-size:50px;">
+    {{title}}</h2>
+
+<div style="text-align:center;margin-top:20px;">
+    <div class="button-group">
+        <button type="button" class="button button-pill button-action button-green" (click)="Edit()">编辑</button>
+        <button type="button" class="button button-pill button-action button-green" (click)="Delete()">删除</button>
+    </div>
+</div>
+
+<div class="panel panel-default" style="margin:30px;">
+    <markdown [data]='body' style="font-size:30px;"></markdown>
+</div>
